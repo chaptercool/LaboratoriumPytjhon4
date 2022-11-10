@@ -13,8 +13,12 @@ print(zestaw_2)
 
 liczba = int(input("Podaj liczbę: "))
 if liczba  in  zestaw_1:
-    print("Liczna z zestawu pierwszego.")
+    print("Liczba z zestawu pierwszego.")
 elif liczba in zestaw_2:
-    print("Liczna z zestawu drugiego.")
+    print("Liczba z zestawu drugiego.")
 else:
     print("Liczba nie występuje w żadnym z zestawów!")
+
+zestaw_1_2 = zestaw_1 + zestaw_2
+zestaw_1_2.sort()
+print("Suma zestawów pierwszego i drugiego: ", zestaw_1_2)
