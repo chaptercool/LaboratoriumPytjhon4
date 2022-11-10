@@ -2,6 +2,10 @@ import random
 
 zestaw_1 = []
 n = int(input("Podaj rozmiar lista: "))
-x = random.randint(1, 10)
-
-zestaw_1.append(x)
+for i in range(n):
+    x = random.randint(1, 10)
+    zestaw_1.append(x)
+print(zestaw_1)
+n = int(input("Podaj rozmiar lista: "))
+zestaw_2 = [random.randint(5, 15) for i in range(n)]
+print(zestaw_2)
